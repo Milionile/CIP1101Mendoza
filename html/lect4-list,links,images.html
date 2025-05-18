@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lect4.css">
+    <script src="../javascript/lect4.js"></script>
+    <title>Lecture 4: List, Links, Images</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="exams.html">Exams</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Lists</h1>
+        <h2>Ordered Lists</h2>
+        <ul>
+            <li>Are lists in which each item is numbered usually starting at 1.</li>
+            <li>It is used if you want to emphasize that the elements are ordered or has hierarchy.</li>
+            <li>Are good for set of instructions.</li>
+        </ul>
+        <p>example:</p>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+        <p>You also can alter the style of the numbering used for the items with css</p>
+        <p>example:</p>
+        <ol>
+            <li style="list-style: decimal;">item 1</li>
+            <li style="list-style: upper-alpha;">item 2</li>
+            <li style="list-style: lower-alpha;">item 3</li>
+            <li style="list-style-type:upper-roman;">item 4</li>
+            <li style="list-style: lower-roman;">item 5</li>
+        </ol>
+        <h2>Unordered Lists</h2>
+    
+        <ul>
+            <li>Are lists in which each item is not numbered.</li>
+            <li>It is used if you want to emphasize that the elements are unordered or has no hierarchy.</li>
+            <li>Are good for set of instructions.</li>
+        </ul>
+        <p>example:</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+        <p>You also can alter the style of the bullets used for the items with css</p> 
+        <p>example:</p>
+        <ul>
+            <li style="list-style: disc;">item 1</li>
+            <li style="list-style: circle;">item 2</li>
+            <li style="list-style: square;">item 3</li>
+            <li style="list-style: none;">item 4</li>
+        </ul>
+        <h2>Description lists</h2>
+        <ul>
+            <li>lists in which each item is described by a term.</li>
+            <li>uses dl tag to define the description list, dd defines the term (name), dt describes the term</li>
+        </ul>
+        <p>example:</p>
+        <dl>
+        <dt>Notebook</dt>
+        <dd>- a small book with blank or ruled pages for writing notes in.</dd>
+        <dt>Ballpen</dt>
+        <dd>- is a pen that dispenses ink over a metal ball at its point</dd>
+        </dl>
+        <h2>Nested Lists</h2>
+        <ul><li>are lists inside a list, used to organize information</li></ul>
+        <p>example:</p>
+        <ol>
+            <li>item 1
+                <ul>
+                    <li>item 1.1</li>
+                    <li>item 1.2</li>
+                </ul>
+            </li>
+            <li>item 2
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Horizontal Lists</h2>
+        <p>Using css, we can format a list to be horizontally oriented. This is usually used for navigational bars.</p>
+        <ul class="horizontal-list">
+            <li class="horizontal-list"><a href="https://www.google.com">Google</a></li>
+            <li class="horizontal-list"><a href="https://www.facebook.com">Facebook</a></li>
+            <li class="horizontal-list"><a href="https://www.twitter.com">Twitter</a></li>
+        </ul> <br><br>
+<hr>
+
+        <h1>Links</h1>
+        <ul>
+            <li>With links or hyperlinks, it is possible for the users / readers of the page to jump from one page to another page.</li>
+            <li>Links are created using the <code>&lt;a&gt;</code> tag.</li>
+            <li>Links can be in a form of some text that is highlighted, underlined or colored blue or red. It can be also a graphic
+image.</li>
+            <dl>
+                types of href values:
+                <dt>Absolute URL</dt>
+                <dd>a complete URL that points to a specific page on the web.</dd>
+                <dt>Relative URL</dt>
+                <dd>a partial URL that points to a page on the same site.</dd>
+                <dt>jump within current pages</dt>
+                <dd>an anchor link that points to a specific location within the same page.</dd>
+            </dl>
+        </ul>
+        <h2>Absolute links</h2>
+        <p>A link that links to another website/page in the internet</p>
+        <p>example:</p>
+        <a href="https://pokedle.net" target="_blank">Pokedle</a>
+        <a href="https://wuwadle.com" target="_blank">wuwadle</a>
+        <h2>Relative links</h2>
+        <p>A link that links to another page in the same website</p>
+        <p>example:</p>
+        <a href="lect3-tables.html">Lecture 3: Tables in HTML</a>
+        <a href="lect4-list,links,images.html">Lecture 4: Lists, Links, Images</a>
+        <h3>Target Attributes</h3>
+        <p>When you click a link, the default behavior is to open the link in the same window. You can change this behavior by using the target attribute.</p>
+        <ul>
+            <li><code>_blank</code> - opens the link in a new window or tab.</li>
+            <li><code>_self</code> - opens the link in the same window or tab (default).</li>
+            <li><code>_parent</code> - opens the link in the parent frame.</li>
+            <li><code>_top</code> - opens the link in the full body of the window.</li>
+        </ul>
+        <p>example:</p>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.facebook.com" target="_self">Facebook</a>
+        <a href="https://www.twitter.com" target="_parent">Twitter</a>
+        <a href="https://www.instagram.com" target="_top">Instagram</a>
+        <h3>Images as links
+        </h3>
+        <p>We can also make images clickable and linked to another page</p>
+        example:
+        <a href="https://www.google.com" target="_blank">
+            <img src="../image/google.png" alt="Google" width="150" height="150">
+        </a>
+
+        <h2>HTML images</h2>
+        <p>Images are added to a web page using the <code>&lt;img&gt;</code> tag.</p>
+        the syntax of the <code>&lt;img&gt;</code> tag is:
+        <p><code>&lt;img src="image.jpg" alt="description" width="width" height="height"&gt;</code></p>
+        <p>example:</p>
+        <img src="../image/milo.jpg" alt="Milo" width="150" height="150">
+        <p>example with width and height:</p>
+        <img src="../image/milo.jpg" alt="Milo" width="300" height="300">
+        <p>example with alt attribute:</p>
+        <img src="../image/milo" alt="Milo" width="300" height="300">
+        <p>example with image map</p>
+        <img src="../image/milo.jpg" alt="Milo" width="150" height="150" usemap="#milo">
+        <map name="milo">
+            <area shape="rect" coords="34,44,270,350" href="https://www.google.com" target="_blank" alt="Google">
+        </map>
+        
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">↑ Top</button>
+
+
+    </main>
+</body>
+</html>

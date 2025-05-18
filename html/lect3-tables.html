@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lect 3: Tables</title>
+    <style>
+        table.border, table.border th, table.border td {
+            border: 1px solid black;
+            border-collapse: separate; /* default behavior, optional */
+        }
+
+        table.collapsed {
+            border-collapse: collapse;
+        }
+        table.collapsed th, table.collapsed td {
+            border: 1px solid black;
+        }
+        table.cellpad th, table.cellpad td {
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        table.left th, table.left td {
+            text-align: left;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table.spacing {
+            border-collapse: collapse;
+            border: 1px solid black;
+            border-spacing: 20px;
+        }
+        table.spacing th, table.spacing td {
+            border-spacing:1px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        .general th, .general td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 65%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-align: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4caf50;
+}
+
+     </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="exams.html">Exams</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>
+        Lecture 3: Tables in HTML
+    </h1>
+    <h2>This table is a raw table, no css means no visible borders</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Adding a border</h2>
+    <table class="border" style="width: 100%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Collapsed border</h2>
+    <table class="collapsed" style="width: 100%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Padded Cells
+    </h2>
+    <table class="cellpad" style="width: 100%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>left-allign headings</h2>
+    <table class="left" style="width: 100%;">
+        <tr>
+            <th >First Name</th>
+            <th >Last Name</th>
+            <th >Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Border Spacing</h2>
+    <table class="spacing" style="width: 100%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+
+    </table>
+    <h2>Colspan</h2>
+    <table class="general" style="width: 100%;">
+        <tr>
+            <th colspan="2">First Name</th>
+            <th colspan="5">Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td colspan="2">Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+            <td>haha</td>
+        </tr>
+    </table>
+    <h2>Rowspan</h2>
+    <table class="general" style="width: 100%;">
+        <tr>
+            <th rowspan="2">First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ernesto</td>
+            <td>Mendoza</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>
