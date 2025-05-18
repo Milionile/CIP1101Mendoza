@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Milo">
+    <meta name="description" content="this is for Act 2.">
+    <link rel="icon" href="https://preview.redd.it/biyoo-debut-is-real-v0-whqr090gv7ae1.jpg?width=690&format=pjpg&auto=webp&s=52e25cd199f21d9bd566e740d2d8b96c5348a747" type="image/x-icon">
+    <title>Image Gallery</title>
+    <style>
+        
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-align: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4caf50;
+}
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        .hover-image {
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+        .hover-image:hover {
+            transform: scale(1.2); /* Scale up the image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="exams.html">Exams</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <table style="width: fit-content;">
+        <tr>
+            <th colspan="3" style="background-color: paleturquoise; font-size: 20px;">Gallery of Cool Women</th>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background-color: gray; text-align: center; padding-top: 5px; padding-bottom: 5px;"><a href="https://wutheringwaves.fandom.com/wiki/Zani"><img src="https://static.wikia.nocookie.net/wutheringwaves/images/d/df/Zani_Card.png" alt="Zani" class="hover-image" height="700" width="250"></a></td>
+            <td colspan="2" style="background-color: #B2A5FF; text-align: center; ;"><a href="https://gamewith.net/genshin-impact/article/show/24184"><img src="https://img.gamewith.net/article/thumbnail/rectangle/24184.png" alt="Raiden Ei"  class="hover-image" height="250" width="500"></a></td>
+        </tr>
+        <tr>
+            <td style="background-color: #FFCFCF;padding: 10px;text-align: center;"><a href="https://www.reddit.com/r/WutheringWaves/comments/1hje7fv/we_are_eating_good_with_these_carlottas_va_casts/"><img src="https://preview.redd.it/we-are-eating-good-with-these-carlottas-va-casts-next-patch-v0-9700q2caf88e1.png?width=360&format=png&auto=webp&s=8b72b7492a9fb12540e7f3f8011c02d06f16ea7c" alt="Carlotta" class="hover-image" height="200" width="200"></a></td>
+            <td style="background-color: #C4D9FF;padding: 10px;text-align: center;"><a href="https://www.prydwen.gg/wuthering-waves/characters/jinhsi"><img src="https://www.prydwen.gg/static/136095b0f95ac4be3ddc7e2d585855bf/b26e2/jihni_card.webp" alt="Jinhsi" class="hover-image" width="200" height="200"></a></td>
+        </tr>
+        <tr>
+            <td style="background-color: #5C7285;padding: 10px; text-align: center;"><a href="https://www.pinterest.com/pin/652740539746072159/"><img src="https://i.pinimg.com/736x/6a/89/9e/6a899e988ce862f2558f4b6415dda752.jpg" alt="Han Sooyoung" class="hover-image" height="200" width="200"></a></td>
+            <td style="background-color: #B8D576;padding: 10px;text-align: center;"><a href="https://cdn.donmai.us/sample/c7/b6/__zani_wuthering_waves_drawn_by_kyou_039__sample-c7b6ed8ea4fa894c2b3c5b3daf1f7191.jpg"><img src="../image/zani.jpg" alt="Chibi Zani" class="hover-image" height="200" width="200"></a></td>
+        </tr>
+    </table>
+    </main>
+</body>
+</html>
