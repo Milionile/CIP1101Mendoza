@@ -1,0 +1,137 @@
+.container {
+    display: grid;
+    grid-template-columns: .3fr 1fr 1fr;
+    column-gap: 15px;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    padding: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 20px auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #7D0A0A;
+    font-family: Arial, sans-serif;
+}
+header {
+    width: 100%;
+    background-color: #1F4529;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: auto;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #1F4529;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+}
+header, footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #4caf50;
+}
+.logo {
+    font-size: 30px;
+    font-family: 'Times New Roman', 'serif';
+    margin-right: auto;
+}
+.img {
+    grid-column: 2/3;
+    width: 100%;
+}
+.text {
+    grid-column: 3/4;
+    padding: 10px;
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#holo {
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Times New Roman', 'serif';
+}
+#saleprice {
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Times New Roman', 'serif';
+    margin-bottom: 5px;
+}
+#ogprice {
+    text-decoration: line-through;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Times New Roman', 'serif';
+    margin-bottom: 15px;
+}
+.thumbnail-gallery {
+    display: grid;
+    grid-column: 1/2;
+    gap: 10px;
+}
+.thumbnail {
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+.thumbnail:hover {
+    border: 2px solid #007bff;
+}
+#displayed-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}

@@ -1,0 +1,146 @@
+
+.logo {
+    font-size: 30px;
+    font-family: 'Times New Roman', 'serif';
+    margin-right: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #4caf50;
+}
+header {
+    width: 100%;
+    background-color: #1F4529;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: auto;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #1F4529;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+header, footer {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #7D0A0A;
+    font-family: Arial, sans-serif;
+}
+#bed{
+background-image: url(https://cdn.thewirecutter.com/wp-content/uploads/2019/08/platform-bed-frames-2x1-lowres6229.jpg?width=2048&quality=75&crop=2:1&auto=webp);
+background-size: cover;
+background-position: center;
+height: 250px;
+background-repeat: no-repeat;
+}
+.container{
+    background-color: #fff5e6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 10px;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+#card1{
+grid-column: 1/2;
+}
+#card2{
+grid-column: 2/3;
+}   
+#card3{
+grid-column: 3/4;
+}
+#he1{
+text-align: center;
+margin: auto;
+grid-column: 1/-1;
+}
+#he2{
+    text-align: left;
+    margin: auto;
+    grid-column: 1/-1;
+}
+#p1{
+margin: auto;
+margin-bottom: 15px;
+text-align: center;
+grid-column: 1/-1;
+}
+    .card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: auto;
+text-align: center;
+font-family: arial;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+width: 100%;
+margin-top: auto;
+}
+
+.price {
+color: grey;
+font-size: 22px;
+}
+
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+#fur{
+grid-row: 1/2
+}
+.card button:hover {
+opacity: 0.7;
+}
+a{
+text-decoration: none;
+color: black;
+}
