@@ -1,12 +1,14 @@
-function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    const openBtn = document.querySelector(".open-btn");
 
-    if (sidebar.style.left === "-250px" || sidebar.style.left === "") {
-        sidebar.style.left = "0";
-        openBtn.style.display = "none"; // Hide the ☰ button
+window.onscroll = function() {
+    let btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
     } else {
-        sidebar.style.left = "-250px";
-        setTimeout(() => { openBtn.style.display = "block"; }, 300); // Show ☰ after animation
+      btn.style.display = "none";
     }
-}
+  };
+
+  // Scroll to top when button clicked
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
