@@ -19,7 +19,117 @@
         </nav>
     </header>
     <main>
+            <h1>Web Forms</h1>
+            <h2>HTML INPUT TYPES</h2>
 
+            <form action="/submit" method="post" autocomplete="on" enctype="multipart/form-data" novalidate>
+                <h3>input type text</h3>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required maxlength="30" autofocus><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required maxlength="30"><br>
+                <h3>input type password</h3>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" minlength="6" maxlength="20" required placeholder="Enter password"><br>
+                <h3>input type email</h3>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="example@email.com"><br>
+                <h3>input type number</h3>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="0" max="120" step="1" required><br>
+                <h3>input type date</h3>
+                <label for="bday">Birthday:</label><br>
+                <input type="date" id="bday" name="bday" required><br>
+                <h3>input type time</h3>
+                <label for="appt">Select a time:</label><br>
+                <input type="time" id="appt" name="appt" required><br>
+                <h3>input type color</h3>
+                <label for="favcolor">Favorite color:</label><br>
+                <input type="color" id="favcolor" name="favcolor" value="#0000ff"><br>
+                <h3>input type range</h3>
+                <label for="vol">Volume (0-100):</label><br>
+                <input type="range" id="vol" name="vol" min="0" max="100" value="50" step="5"><br>
+                <h3>input type url</h3>
+                <label for="homepage">Homepage:</label><br>
+                <input type="url" id="homepage" name="homepage" placeholder="https://example.com" pattern="https://.*"><br>
+                <h3>input type tel</h3>
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br>
+                <h3>input type radio</h3>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <h3>Input type submit</h3>
+                <input type="submit" value="Submit">
+                <h3>Input type checkbox</h3>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br>
+                <h3>Input type file</h3>
+                <label for="myfile">Select a file (multiple, only images or pdf, max 2 files):</label><br>
+                <input type="file" id="myfile" name="myfile" accept="image/*,application/pdf" multiple><br>
+                <h3>Input type hidden</h3>
+                <input type="hidden" id="userid" name="userid" value="12345">
+                <h3>Input type image</h3>
+                <label>Example image button:</label><br>
+                <input type="image" src="../image/4.png" alt="Submit" width="48" height="48"><br>
+                <h3>Input type list (datalist)</h3>
+                <label for="browsers">Choose your browser from the list:</label><br>
+                <input list="browsers" name="browser" id="browsers" placeholder="e.g. Chrome" required>
+                <datalist id="browsers">
+                  <option value="Chrome">
+                  <option value="Firefox">
+                  <option value="Safari">
+                  <option value="Edge">
+                  <option value="Opera">
+                </datalist><br>
+                <h3>Input type with min, max, step, pattern, placeholder, required, multiple</h3>
+                <label for="lucky">Enter a lucky number (1-100, step 2):</label><br>
+                <input type="number" id="lucky" name="lucky" min="1" max="100" step="2" placeholder="Odd numbers only" required><br>
+                <label for="username">Username (letters and numbers only, 5-12 chars):</label><br>
+                <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,12}" placeholder="e.g. user123" required><br>
+                <label for="favfruits">Favorite fruits (choose multiple):</label><br>
+                <select id="favfruits" name="favfruits" multiple required>
+                  <option value="apple">Apple</option>
+                  <option value="banana">Banana</option>
+                  <option value="orange">Orange</option>
+                  <option value="grape">Grape</option>
+                  <option value="mango">Mango</option>
+                </select><br>
+                <h3>Input type reset</h3>
+                <input type="reset" value="Reset">
+            </form>
+            <hr>
+            <h2>HTML Multimedia Elements</h2>
+            <h3>Image Example</h3>
+            <label>Sample image:</label><br>
+            <img src="../image/milo.jpg" alt="Milo" width="200"><br>
+            <h3>Audio Example</h3>
+            <label>Sample audio (controls, autoplay, loop):</label><br>
+            <audio controls autoplay loop>
+                <source src="../image/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio><br>
+            <h3>Video Example</h3>
+            <label>Sample video (controls, width, poster):</label><br>
+            <video width="320" height="240" controls poster="../image/4.png">
+                <source src="../image/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br>
+            <h3>Embed Example (YouTube)</h3>
+            <label>Embedded YouTube video:</label><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NVK9jHJuZJg?si=LV_xZC6ESoEOO0jJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+            <h3>Object Example (PDF)</h3>
+            <label>Embedded PDF document:</label><br>
+            <object data="../document/CIP1101 Lect6 Forms and Multimedia.pdf" type="application/pdf" width="400" height="300">
+                <a href="../document/CIP1101 Lect6 Forms and Multimedia.pdf">View PDF</a>
+            </object><br>
     </main>
 </body>
 </html>
